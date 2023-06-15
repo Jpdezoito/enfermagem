@@ -1,0 +1,68 @@
+body {
+    background-color: #FEE9F1; /* Cor de fundo rosa claro */
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    font-size: 20px; /* Tamanho da fonte aumentado para 20 pixels */
+  }
+
+  ul li:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #F15F8D; /* Cor rosa para a animação */
+    transition: width 2s; /* Duração da animação de sublinhado */
+  }
+
+  ul li:hover::after {
+    width: 100%; /* Sublinhado completo ao passar o mouse */
+  }
+
+  ul li a {
+    text-decoration: none; /* Remover o sublinhado padrão dos links */
+  }
+
+  header {
+    background-color: #FFF; /* Cor de fundo branco */
+    padding: 20px;
+  }
+
+  h1 {
+    background-color: #F15F8D; /* Cor de fundo rosa chock para o título */
+    color: #FFF; /* Cor do texto do título em branco */
+    padding: 10px;
+    margin: 0;
+  }
+
+  main {
+    background-color: #FFF; /* Cor de fundo branco para o conteúdo */
+    padding: 20px;
+    margin: 20px;
+  }
+
+  h2 {
+    color: #F15F8D; /* Cor rosa para os títulos h2 */
+  }
+
+  p {
+    background-color: #FFF; /* Cor de fundo branco para os parágrafos */
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #DDD; /* Sombra na borda do parágrafo */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 20px;
+  }
